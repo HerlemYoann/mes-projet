@@ -179,6 +179,12 @@ nava:hover {
   margin: 2px;
 }
 
+label {
+  display: block;
+  width: 125px;
+  float: left;
+}
+
 @-webkit-keyframes apparition {
   0% {
     opacity: 0;
