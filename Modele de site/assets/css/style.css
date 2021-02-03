@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #7F25D9;
+}
+
+
+header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color:#2F0459;
+color: #D98E04;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+
+.dessin {
+
+    width: 7rem;
+    height:7rem;
+}
+
+.dessin img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.menu1{
+    width: 85%;
+    
+}
+
+.menu1 > ul{
+
+    display: flex;
+    list-style-type: none;
+    font-size: 1.8rem;
+    
+}
+
+ul {
+    padding: 0;
+}
+
+ul > li {
+
+    list-style-type: none;
+    width: 200px;
+    position: relative;
+}
+
+.menu1 > ul > li > .Sous_Menu > li{
+    display: none;
+
+    
+}
+
+.menu1 > ul > li:hover ul > li {
+    display: block;
+}
+
+ li a:hover {
+   color:#2F0459;
+   background-color:#F2E205;
+   transition: all 0.5s;
+   border-radius: 10px;
+  
+}
+
+li > a{
+    display: block;
+    text-decoration: none;
+    color: #D98E04;
+    text-align: center;
+  
+}
+
+.Sous_Menu{
+    position: absolute;
+    background-color: #2F0459;
+    border-radius: 10px;
+}
+.Sous_Menu > li > a{
+    padding: 15px;
+    text-align: start;
+}
+
+
+main{
+    justify-content: center;
+    text-align: center;
+    background:url("../img/fleur.png") no-repeat ;
+    background-size: cover;
+    height: 40rem;
+    color: #D98E04;
+    border: 2px solid olive;
+
+}
+main > h1{
+    font-size: 6rem;
+    color: #7f25d9b7;
+}
+
+main > h2 {
+    font-size: 3rem;
+}
+
+.bouton{
+    display: flex;
+    justify-content: center;
+
+}
+.btn{
+   
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;
+    border-radius: 10px;
+    background-size: 200%;
+}
+
+.btn1 {
+    background-image: linear-gradient(
+        to right,
+        #D98E04,
+        #F2E205,
+        #D98E04
+    );
+    transition: transform .5s;
+    animation: apparition 2s;
+}
+
+.btn1:hover{
+    background-position: right;
+    transform: scale(1.2);
+  
+}
+
+
+.conteneur{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.conteneur > .secteur{
+    font-size: 1.2rem;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #F2E205;
+    border-radius: 10px;
+    height: 20rem;
+    width: 25%;
+   
+}
+
+
+.conteneur > .secteur > h3{
+    
+    font-size: 2rem;
+    background-color:#F2E205 ;
+   border-radius: 10px 10px 0 0;
+    margin-top: -1px;
+   
+   
+}
+
+.secteur{
+    transition: transform .2s;
+}
+
+ .secteur:hover{
+    opacity: 0.5;
+    background-color:  #F2E205;
+    transition: transform .5s;
+    transform: scale(1.03);
+   
+}
+
+.secteur1{
+    animation: slideRight 2s;
+}
+
+.secteur2{
+    animation: slideDown 2s;
+}
+.secteur3{
+    animation: slideLeft 2s;
+}
+
+@keyframes slideDown{
+
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    
+    0%{
+        transform: translateX(500px);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+
+    0%{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes apparition{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
