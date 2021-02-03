@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Parisienne';
+  src: url("Parisienne/Parisienne.eot");
+  src: url("Parisienne/Parisienne.eot?#iefix") format("embedded-opentype"), url("Parisienne/Parisienne.woff") format("woff"), url("Parisienne/Parisienne.ttf") format("truetype"), url("Parisienne/Parisienne.svg#Dayrom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url("../image/Champagne.png") center no-repeat fixed;
+  background-color: black;
+  background-size: 2000px;
+  color: #997952;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: #997952 solid 2px;
+}
+
+h1 {
+  font-family: 'Parisienne';
+  font-size: 5em;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  height: 10em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #997952;
+  padding-right: 3em;
+  position: relative;
+  -webkit-transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.25s;
+  padding-bottom: 3px;
+  font-size: 1.2em;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.4em;
+  width: 0%;
+  background-color: #997952;
+  bottom: -1em;
+  -webkit-transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.25s;
+}
+
+nav a:hover::after {
+  width: 60%;
+}
+
+nava:hover {
+  color: #997952;
+}
+
+.Slyde {
+  margin: 30px auto;
+  max-width: 1200px;
+  height: 500px;
+}
+
+.Slyde#amazingslider-1 {
+  display: block;
+  position: relative;
+  margin: 16px auto 56px;
+  height: 500px;
+}
+
+.Slyde h2 {
+  font-size: 5em;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Parisienne';
+}
+
+.Slyde2 {
+  margin: 30px auto;
+  max-width: 1200px;
+  height: 500px;
+}
+
+.Slyde2#amazingslider-1 {
+  display: block;
+  position: relative;
+  margin: 16px auto 56px;
+  height: 500px;
+}
+
+.Slyde2 h2 {
+  font-size: 5em;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Parisienne';
+}
+
+.Presentation {
+  margin-left: 20px;
+}
+
+.Presentation .Titre {
+  font-size: 100px;
+  color: #997952;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+.Presentation .text {
+  font-size: 20px;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  color: #997952;
+}
+/*# sourceMappingURL=styles2.css.map */
