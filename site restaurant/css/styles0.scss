@@ -96,7 +96,7 @@ nav {
       margin-top: 250px;
       color:black;
       font-size: 3em;
-      transition: all 1s;
+      animation: apparition 2s;
 
       & section {
         display: flex;
@@ -129,7 +129,18 @@ nav {
   
   
 
+  @keyframes apparition{
 
+    0%{
+        
+        opacity: 0;
+    }
+
+    100% {
+      
+        opacity: 1;
+    }
+}
   
 
 

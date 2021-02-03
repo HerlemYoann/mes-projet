@@ -88,8 +88,8 @@ nav a:hover::after {
   margin-top: 250px;
   color: black;
   font-size: 3em;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-animation: apparition 2s;
+          animation: apparition 2s;
 }
 
 .Titre section {
@@ -129,5 +129,23 @@ nav a:hover::after {
 .Titre section .btn a {
   color: black;
   text-decoration: none;
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles0.css.map */

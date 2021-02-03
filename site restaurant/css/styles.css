@@ -114,8 +114,6 @@ nava:hover {
   background-color: rgba(0, 0, 0, 0.9);
   margin-top: 50px;
   text-align: center;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .Carte section h2 {
@@ -144,5 +142,79 @@ nava:hover {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.Menu_j {
+  -webkit-animation: slideLeft 2s;
+          animation: slideLeft 2s;
+}
+
+.Menu_s {
+  -webkit-animation: slideRight 2s;
+          animation: slideRight 2s;
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -105,7 +105,7 @@ nav {
   background-color: $backblack;
   margin-top: 50px;
   text-align: center;
-  transition: all 1s;
+  
 
     
   & h2 {
@@ -133,6 +133,44 @@ nav {
 
   }
 
+  .Menu_j{
+    animation: slideLeft 2s;
+  }
 
+  .Menu_s{
+    animation: slideRight 2s ;
+  }
  
-  
+  @keyframes slideLeft{
+
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+
+  0%{
+      transform: translateX(1000px);
+      opacity: 0;
+  }
+
+  50%{
+      opacity: 0.5;
+  }
+
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
